@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fondamento', cursive;
+}
+.quote{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #0f826c;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow:10px 5px 10px rgb(54, 54, 54);
+}
+.card h3{
+    font-size: 36px;
+    margin-bottom: 14px;
+    color: white;
+}
+.card button{
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.card button:hover{
+    background-color: white;
+    color: #0f826c;
+}
