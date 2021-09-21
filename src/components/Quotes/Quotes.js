@@ -1,12 +1,11 @@
 
-import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import './Quotes.css'
 
 const Quotes = () => {
     const [quote, setQuote] = useState([])
     useEffect(() => {
-        fetch('https://api.kanye.rest/')
+        fetch(`https://api.kanye.rest/`)
             .then(res => res.json())
             .then(data => setQuote(data.quote))
     }, [])
